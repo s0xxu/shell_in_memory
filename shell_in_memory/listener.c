@@ -42,7 +42,7 @@ if (sock == -1) {
 struct sockaddr_in device_addr;
 device_addr.sin_family = AF_INET;
 device_addr.sin_port = htons(4444);
-  if (inet_pton(AF_INET, "192.168.1.98", &device_addr.sin_addr.s_addr) == -1) {
+  if (inet_pton(AF_INET, "192.168.1.1", &device_addr.sin_addr.s_addr) == -1) {
     printf("inet_pton  %d %s\n", errno, strerror(errno));
 	  exit(EXIT_FAILURE);
   }
